@@ -51,6 +51,7 @@ $json = array(
     'results'   =>  'delete success'
 );
 
+// ステータス出力
 echo json_encode($json);
 
 exit(0);

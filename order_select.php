@@ -32,11 +32,15 @@ if( $result = mysqli_query($con,$sql) ){
         array_push($json,$row);
     }
     mysqli_free_result($result);
+}else{
+    error(500, sprintf("Error mysqli_query function: %s", mysqli_error($con)));
+    exit(1);
 }
 
 // 接続クローズ
 mysqli_close($con);
 
+// 取得クエリ出力
 echo json_encode($json);
 
 exit(0);
