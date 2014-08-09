@@ -1,16 +1,9 @@
 <?php
 	//POSTされたデータ
-	/*$orderID = $_POST["id"];
 	$orderUSER = $_POST["user"];
 	$orderSTART =  $_POST["start"];
 	$orderGOAL = $_POST["goal"];
-	$orderDATE = $_POST["date"];
 	$orderTEMP = $_POST["temp"];
-	*/
-	$orderUSER = $_GET["user"];
-	$orderSTART =  $_GET["start"];
-	$orderGOAL = $_GET["goal"];
-	$orderTEMP = $_GET["temp"];
 
 	echo $orderUSER;
 	echo $orderSTART;
